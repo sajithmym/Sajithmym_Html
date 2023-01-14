@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>My Form</title>
+   <style type="text/css">
+      body {background-color:orange; font-family: arial;}
+      img {border: none;}
+      H5{color : orange}
+      H4{color : lightgreen}
+      H3{color : aqua}
+      H2{color : orange}
+      H1{color : yellow}
+   </style>
+</head>
+
+<body bgcolor="yellow">
+<h3> Display </h3>
+
+<button type="button" onclick ="document.getElementById('demo').innerHTML='Hi'"> saJiTh </button>
+<p id="demo">Mohammed sajith </p>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<button type="button" onclick="document.getElementById('cool').innerHTML=t"> 10 times... </button>
+
+<input type="file" id="j">
+
+<script>
+document.getElementById('j').onchange = () =>{
+   //let f = this.files[0]
+   console.log(this)
+}
+var i=1,t="<h1 style='color:red;text-align:center;'>";
+while (i!=11) {
+t+=i*5+'<br>';
+i+=1
+} 
+t+="</h1>"
+</script>
+<p id='cool'> 1 to 10 </p>
+</body>
+</html> 
